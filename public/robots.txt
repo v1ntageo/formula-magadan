@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://formula-magadan.ru/sitemap.xml

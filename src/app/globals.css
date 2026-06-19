@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --color-bg: #1a1a1a;
+    --color-red: #e30613;
+    --color-yellow: #ffc107;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
