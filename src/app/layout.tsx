@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: 'Автокомплекс «Формула» | Автомойка, магазин, грузовой шиномонтаж в Магадане',
-  description: '...',
+  description: 'Автокомплекс «Формула» в Магадане. Профессиональная автомойка, автомагазин с большим выбором автотоваров и грузовой шиномонтаж в одном месте.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     title: 'Автокомплекс «Формула» Магадан',
     description: 'Автомойка, автомагазин и грузовой шиномонтаж в одном месте',
     images: ['/images/background.webp'],
+  },
+  verification: {
+    yandex: 'b3f929d5b8d107ca',
   },
 }
 
