@@ -25,14 +25,29 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <Image
-          src={backgroundImage}
-          alt="Автокомплекс Формула в Магадане"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
+        {/* Фото для десктопа */}
+        <div className="absolute inset-0 hidden sm:block">
+          <Image
+            src={backgroundImage}
+            alt="Автокомплекс Формула в Магадане"
+            fill
+            className="object-cover object-[80%_center] lg:object-center"
+            priority
+            sizes="100vw"
+          />
+        </div>
+
+        {/* Фото для мобильных */}
+        <div className="absolute inset-0 block sm:hidden">
+          <Image
+            src="/images/background-mobile.webp"
+            alt="Автокомплекс Формула в Магадане"
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="100vw"
+          />
+        </div>
         <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/50 to-black/80" />
       </div>
 
@@ -61,7 +76,7 @@ export function Hero() {
         </p>
 
         <p className="text-base text-white mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-          Ваш надежный автокомплекс для обслуживания автомобиля. У нас вы можете воспользоваться автомойкой, приобрести необходимые автотовары и выполнить грузовой шиномонтаж в одном месте.
+          Ваш надежный автокомплекс для обслуживания автомобиля. У нас вы можете воспользоваться автомойкой, приобрести автозапчасти, автотовары и выполнить грузовой шиномонтаж в одном месте.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">

@@ -85,12 +85,20 @@ export function Services() {
 
                 <div className="mt-auto">
                   {service.id === 'shop' ? (
-                    <button
-                      onClick={() => setIsModalOpen(true)}
-                      className="w-full cursor-pointer inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg transition-all duration-300 bg-red-600 hover:bg-red-700 text-white shadow-lg shadow-red-600/25"
-                    >
-                      Написать
-                    </button>
+                    <div className="flex gap-3">
+                      <a
+                        href={`tel:${servicePhones.shop}`}
+                        className="flex-1 cursor-pointer inline-flex items-center justify-center px-4 py-4 text-base font-semibold rounded-lg transition-all duration-300 border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 text-center"
+                      >
+                        Позвонить
+                      </a>
+                      <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="flex-1 cursor-pointer inline-flex items-center justify-center px-4 py-4 text-base font-semibold rounded-lg transition-all duration-300 bg-red-600 hover:bg-red-700 text-white shadow-lg shadow-red-600/25"
+                      >
+                        Написать
+                      </button>
+                    </div>
                   ) : (
                     <a
                       href={`tel:${servicePhones[service.id]}`}
@@ -143,18 +151,6 @@ export function Services() {
             </div>
           </a>
 
-          <a
-            href={`tel:${servicePhones.shop}`}
-            className="flex items-center gap-4 p-4 rounded-xl bg-red-600/20 border border-red-500/30 hover:bg-red-600/30 transition-colors"
-          >
-            <svg className="w-8 h-8 text-red-500 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-              <path fillRule="evenodd" clipRule="evenodd" d="M5.73268 2.043C6.95002 0.832583 8.95439 1.04804 9.9737 2.40962L11.2347 4.09402C12.0641 5.20191 11.9909 6.75032 11.0064 7.72923L10.7676 7.96665C10.7572 7.99694 10.7319 8.09215 10.76 8.2731C10.8232 8.6806 11.1635 9.545 12.592 10.9654C14.02 12.3853 14.8905 12.7253 15.3038 12.7887C15.4911 12.8174 15.5891 12.7906 15.6194 12.78L16.0274 12.3743C16.9026 11.5041 18.2475 11.3414 19.3311 11.9305L21.2416 12.9691C22.8775 13.8584 23.2909 16.0821 21.9505 17.4148L20.53 18.8273C20.0824 19.2723 19.4805 19.6434 18.7459 19.7119C16.9369 19.8806 12.7187 19.6654 8.28659 15.2584C4.14868 11.144 3.35462 7.556 3.25415 5.78817L4.00294 5.74562L3.25415 5.78817C3.20335 4.89426 3.62576 4.13796 4.16308 3.60369L5.73268 2.043Z"/>
-            </svg>
-            <div className="text-left">
-              <div className="text-white font-semibold text-sm">Позвонить</div>
-              <div className="text-gray-400 text-xs">Прямой звонок в магазин</div>
-            </div>
-          </a>
         </div>
       </Modal>
     </>

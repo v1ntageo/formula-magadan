@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ['/images/background.webp'],
   },
   verification: {
-    yandex: 'b3f929d5b8d107ca',
+    yandex: 'a77acfc030906ca1',
   },
 }
 

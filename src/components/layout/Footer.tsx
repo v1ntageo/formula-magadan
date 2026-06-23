@@ -34,7 +34,7 @@ export function Footer() {
                 ))}
               </div>
               <div>
-                <p className="text-xs text-gray-500 mb-1">Шиномонтаж</p>
+                <p className="text-xs text-gray-500 mb-1">Грузовой шиномонтаж</p>
                 {siteData.services[2].phones.map((phone) => (
                   <PhoneLink key={phone} phone={phone} variant="footer" className="block text-sm mb-1" />
                 ))}
