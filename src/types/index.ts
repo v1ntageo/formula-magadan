@@ -25,4 +25,6 @@ export interface SiteData {
     action: string
     variant: 'primary' | 'secondary'
   }[]
+  certificates: string[]
+  gallery: string[]
 }

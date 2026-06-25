@@ -8,6 +8,7 @@ export function Header() {
 
   const navItems = [
     { label: 'Услуги', href: '#services' },
+    { label: 'Галерея', href: '#gallery' },
     { label: 'Контакты', href: '#contacts' },
   ]
 
